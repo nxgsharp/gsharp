@@ -1,0 +1,9 @@
+Info om specifika frågor flyttad till respektive fil.
+
+Generella frågor:
+
+- The "not a number/path/refnum" node cannot take an event reference as input. Neither can "type cast". Is there a way of checking if the event reference is valid or exists?
+
+- Virtual folders inside a gtype not available. To be implemented or should we do it another way?
+
+- Refernces lives as long as the Top Level VI lives, In NXG?

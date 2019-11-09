@@ -1,0 +1,36 @@
+For converted code to use the correct NXG G#Object, G#Object must be installed so that a package reference is created in NXG which the converted code can link to.
+
+
+Info:
+http://www.ni.com/documentation/en/ni-package-manager/1.0/manual/manual-overview/
+https://basecamp.com/2299158/projects/13443376/messages/67868577
+https://basecamp.com/2299158/projects/4706160/todos/342903534
+https://basecamp.com/2299158/projects/4706160/todos/342903526#comment_600406768
+https://nitalk.jiveon.com/docs/DOC-457344
+https://forums.ni.com/t5/LabVIEW/NI-Package-Manager/td-p/3634594
+http://www.ni.com/documentation/en/ni-package-manager/17.5/manual/installation-target-roots/
+http://www.ni.com/documentation/en/ni-package-manager/1.0/manual/assemble-file-package/
+
+command:
+"c:\program files\national instruments\ni package manager\nipkg.exe" pack <src> <destination>
+"c:\program files\national instruments\ni package manager\nipkg.exe" pack "G:\Projekt\NXG\Conversion\Package\source" "G:\Projekt\NXG\Conversion\Package\destination" --verbose
+
+naming convention:
+<package-name>_<package-version>_<architecture>.nipkg
+
+
+Now, to add your packages to the feed view in NIPM you will need to first create a feed using the NIPM CLI.
+
+Open a command prompt
+Use the command 'cd c:\program files\national instruments\ni package manager' to switch to the NIPM directory
+Use 'nipkg repo-create <directory of package files>' to create a feed
+Use 'nipkg repo-add <directory of feed>' to add the feed to NIPM
+Open NIPM, check the Packages list to view the package(s) included in your feed
+
+
+nipkg repo-create  "G:\Projekt\NXG\Conversion\Package\destination"
+nipkg repo-add  "G:\Projekt\NXG\Conversion\Package\destination"
+nipkg update
+
+
+NIPM control file, see \NXG\Conversion\Package\source\control\control

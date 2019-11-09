@@ -1,0 +1,1363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ConversionMessages>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "user counter (T)?". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_New.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "no registration? (F)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_New.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>VIPriorityNotSupported</ID>
+    <Message>Conversion did not preserve the priority of this VI. VI priority conversion is not currently supported. Before conversion the VI priority was set to ‘Time Critical Priority(Highest)’.</Message>
+    <File>G#Object_New.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "force delete? (F)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_Delete.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>MechanicalActionNotSupported</ID>
+    <Message>The control "force delete? (F)" does not support the mechanical action "Switch When Pressed" and will be converted to use "Switch When Released".</Message>
+    <File>G#Object_Delete.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>VIPriorityNotSupported</ID>
+    <Message>Conversion did not preserve the priority of this VI. VI priority conversion is not currently supported. Before conversion the VI priority was set to ‘Time Critical Priority(Highest)’.</Message>
+    <File>G#Object_Delete.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>VIPriorityNotSupported</ID>
+    <Message>Conversion did not preserve the priority of this VI. VI priority conversion is not currently supported. Before conversion the VI priority was set to ‘Time Critical Priority(Highest)’.</Message>
+    <File>G#Object_InstanceClassAttributes.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "option 1". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>Kernel.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "option 2". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>Kernel.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "option 3". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>Kernel.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>NodeNotSupported</ID>
+    <Message>Conversion replaced a node of type "RequestDeallocation" with a placeholder node. Nodes of this type are not supported in this version of LabVIEW NXG.</Message>
+    <File>Kernel.gvi</File>
+    <Category>Placeholder</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>Info</Severity>
+    <ID>StackedSequenceReplacedByFlatSequence</ID>
+    <Message>Conversion replaced a Stacked Sequence structure with a Flat Sequence Structure. Stacked Sequence structures are not supported in LabVIEW NXG.</Message>
+    <File>Kernel.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>SubVINotSupported</ID>
+    <Message>Conversion replaced the subVI "Error Code Database" with a placeholder. This subVI is not supported in this version of LabVIEW NXG.</Message>
+    <File>Kernel.gvi</File>
+    <Category>Placeholder</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>VIPriorityNotSupported</ID>
+    <Message>Conversion did not preserve the priority of this VI. VI priority conversion is not currently supported. Before conversion the VI priority was set to ‘Time Critical Priority(Highest)’.</Message>
+    <File>Kernel.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>FlattenToStringReplacedByFlattenToByteArray</ID>
+    <Message>Conversion replaced a "Flatten To String" node with a "Flatten To Byte Array" node. The "Flatten To String" node is not supported in LabVIEW NXG.</Message>
+    <File>G#Object_GetCommonQueueName.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>SubVINotSupported</ID>
+    <Message>Conversion replaced the subVI "Qualified Name Array To Single String" with a placeholder. This subVI is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_GetCommonQueueName.gvi</File>
+    <Category>Placeholder</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>VIPriorityNotSupported</ID>
+    <Message>Conversion did not preserve the priority of this VI. VI priority conversion is not currently supported. Before conversion the VI priority was set to ‘Time Critical Priority(Highest)’.</Message>
+    <File>G#Object_GetCommonQueueName.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>VIPriorityNotSupported</ID>
+    <Message>Conversion did not preserve the priority of this VI. VI priority conversion is not currently supported. Before conversion the VI priority was set to ‘Time Critical Priority(Highest)’.</Message>
+    <File>G#Object_Clear.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>VariantToFlattenedStringReplaced</ID>
+    <Message>Conversion replaced an "Variant to Flattened String" node with an "Variant to Flattened Byte Array" node. The "Variant to Flattened String" node is not supported in LabVIEW NXG.</Message>
+    <File>G#Object_ConvertFlattenedDataToMoreGeneric.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>StringToByteArrayChanged</ID>
+    <Message>The behavior of "String To Byte Array" has changed. Conversion wired an "Extended ASCII Encoding" enum constant to try to preserve the same behavior. See the help manual for more information.</Message>
+    <File>G#Object_ConvertFlattenedDataToMoreGeneric.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>StringToByteArrayChanged</ID>
+    <Message>The behavior of "String To Byte Array" has changed. Conversion wired an "Extended ASCII Encoding" enum constant to try to preserve the same behavior. See the help manual for more information.</Message>
+    <File>G#Object_ConvertFlattenedDataToMoreGeneric.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ByteArrayToStringChanged</ID>
+    <Message>The behavior of "Byte Array To String" has changed. Conversion wired an "Extended ASCII Encoding" enum constant to try and preserve the same behavior. See the help manual for more information.</Message>
+    <File>G#Object_ConvertFlattenedDataToMoreGeneric.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>FlattenedStringToVariantReplaced</ID>
+    <Message>Conversion replaced an "Flattened String to Variant" node with an "Flattened Byte Array to Variant" node. The "Flattened String to Variant" node is not supported in LabVIEW NXG.</Message>
+    <File>G#Object_ConvertFlattenedDataToMoreGeneric.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>VIPriorityNotSupported</ID>
+    <Message>Conversion did not preserve the priority of this VI. VI priority conversion is not currently supported. Before conversion the VI priority was set to ‘Time Critical Priority(Highest)’.</Message>
+    <File>G#Object_ConvertFlattenedDataToMoreGeneric.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>NodeNotSupported</ID>
+    <Message>Conversion replaced a node of type "OpenVIReference" with a placeholder node. Nodes of this type are not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_ExternalCreateProcess.gvi</File>
+    <Category>Placeholder</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>VIPriorityNotSupported</ID>
+    <Message>Conversion did not preserve the priority of this VI. VI priority conversion is not currently supported. Before conversion the VI priority was set to ‘Time Critical Priority(Highest)’.</Message>
+    <File>G#Object_ExternalCreateProcess.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>VIPriorityNotSupported</ID>
+    <Message>Conversion did not preserve the priority of this VI. VI priority conversion is not currently supported. Before conversion the VI priority was set to ‘Time Critical Priority(Highest)’.</Message>
+    <File>G#Object_ExternalCreateProcessDelegate.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "created new". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_RegisterObject.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>MechanicalActionNotSupported</ID>
+    <Message>The control "created new" does not support the mechanical action "Switch When Pressed" and will be converted to use "Switch When Released".</Message>
+    <File>G#Object_RegisterObject.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "no registration". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_RegisterObject.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>VIPriorityNotSupported</ID>
+    <Message>Conversion did not preserve the priority of this VI. VI priority conversion is not currently supported. Before conversion the VI priority was set to ‘Time Critical Priority(Highest)’.</Message>
+    <File>G#Object_RegisterObject.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "object killed". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_UnregisterObject.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>MechanicalActionNotSupported</ID>
+    <Message>The control "object killed" does not support the mechanical action "Switch When Pressed" and will be converted to use "Switch When Released".</Message>
+    <File>G#Object_UnregisterObject.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "forced destroy". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_UnregisterObject.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>MechanicalActionNotSupported</ID>
+    <Message>The control "forced destroy" does not support the mechanical action "Switch When Pressed" and will be converted to use "Switch When Released".</Message>
+    <File>G#Object_UnregisterObject.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>VIPriorityNotSupported</ID>
+    <Message>Conversion did not preserve the priority of this VI. VI priority conversion is not currently supported. Before conversion the VI priority was set to ‘Time Critical Priority(Highest)’.</Message>
+    <File>G#Object_UnregisterObject.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "array names (T)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_ParseAttributes.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>VariantToFlattenedStringReplaced</ID>
+    <Message>Conversion replaced an "Variant to Flattened String" node with an "Variant to Flattened Byte Array" node. The "Variant to Flattened String" node is not supported in LabVIEW NXG.</Message>
+    <File>G#Object_ParseAttributes.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>FlattenedStringToVariantReplaced</ID>
+    <Message>Conversion replaced an "Flattened String to Variant" node with an "Flattened Byte Array to Variant" node. The "Flattened String to Variant" node is not supported in LabVIEW NXG.</Message>
+    <File>G#Object_ParseAttributes.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>VariantToFlattenedStringReplaced</ID>
+    <Message>Conversion replaced an "Variant to Flattened String" node with an "Variant to Flattened Byte Array" node. The "Variant to Flattened String" node is not supported in LabVIEW NXG.</Message>
+    <File>G#Object_ParseAttributes.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>FlattenedStringToVariantReplaced</ID>
+    <Message>Conversion replaced an "Flattened String to Variant" node with an "Flattened Byte Array to Variant" node. The "Flattened String to Variant" node is not supported in LabVIEW NXG.</Message>
+    <File>G#Object_ParseAttributes.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>FlattenedStringToVariantReplaced</ID>
+    <Message>Conversion replaced an "Flattened String to Variant" node with an "Flattened Byte Array to Variant" node. The "Flattened String to Variant" node is not supported in LabVIEW NXG.</Message>
+    <File>G#Object_ParseAttributes.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ByteArrayToStringChanged</ID>
+    <Message>The behavior of "Byte Array To String" has changed. Conversion wired an "Extended ASCII Encoding" enum constant to try and preserve the same behavior. See the help manual for more information.</Message>
+    <File>G#Object_ParseAttributes.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ByteArrayToStringChanged</ID>
+    <Message>The behavior of "Byte Array To String" has changed. Conversion wired an "Extended ASCII Encoding" enum constant to try and preserve the same behavior. See the help manual for more information.</Message>
+    <File>G#Object_ParseAttributes.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>Info</Severity>
+    <ID>TypecastDefaultTypeChanged</ID>
+    <Message>Conversion attached a string constant to the "type" terminal of the Type Cast node, because string is no longer the default type in LabVIEW NXG.</Message>
+    <File>G#Object_ParseAttributes.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ByteArrayToStringChanged</ID>
+    <Message>The behavior of "Byte Array To String" has changed. Conversion wired an "Extended ASCII Encoding" enum constant to try and preserve the same behavior. See the help manual for more information.</Message>
+    <File>G#Object_ParseAttributes.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>VIPriorityNotSupported</ID>
+    <Message>Conversion did not preserve the priority of this VI. VI priority conversion is not currently supported. Before conversion the VI priority was set to ‘Time Critical Priority(Highest)’.</Message>
+    <File>G#Object_RegisterClassAttributes.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "send to Desktop Trace Execution". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_SendEvent.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>MechanicalActionNotSupported</ID>
+    <Message>The control "send to Desktop Trace Execution" does not support the mechanical action "Switch When Pressed" and will be converted to use "Switch When Released".</Message>
+    <File>G#Object_SendEvent.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>NodeNotSupported</ID>
+    <Message>Conversion replaced a node of type "GenerateUserMinusDefinedTraceEvent" with a placeholder node. Nodes of this type are not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_SendEvent.gvi</File>
+    <Category>Placeholder</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>VIPriorityNotSupported</ID>
+    <Message>Conversion did not preserve the priority of this VI. VI priority conversion is not currently supported. Before conversion the VI priority was set to ‘Subroutine’.</Message>
+    <File>G#Object_SendEvent.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "no registration? (F)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_Clone.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "user counter (T)?". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_Clone.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>VariantToFlattenedStringReplaced</ID>
+    <Message>Conversion replaced an "Variant to Flattened String" node with an "Variant to Flattened Byte Array" node. The "Variant to Flattened String" node is not supported in LabVIEW NXG.</Message>
+    <File>G#Object_ConvertToMoreGeneric.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "debug enable (F)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_EnableDebug.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "set (F)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_EnableDebug.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>VIPriorityNotSupported</ID>
+    <Message>Conversion did not preserve the priority of this VI. VI priority conversion is not currently supported. Before conversion the VI priority was set to ‘Time Critical Priority(Highest)’.</Message>
+    <File>G#Object_EnableDebug.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "external create enable (F)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_EnableExternalCreate.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "set (F)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_EnableExternalCreate.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>VIPriorityNotSupported</ID>
+    <Message>Conversion did not preserve the priority of this VI. VI priority conversion is not currently supported. Before conversion the VI priority was set to ‘Time Critical Priority(Highest)’.</Message>
+    <File>G#Object_EnableExternalCreate.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "class attributes (F)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_GetAggregatedObjects.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "remove duplicates (F)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_GetAggregatedObjects.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "array names (T)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_GetAggregatedObjects.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "only refs (F)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_GetAllObjects.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "object attributes (T)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_GetAttributeValue.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "class attributes (F)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_GetAttributeValue.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>VariantToFlattenedStringReplaced</ID>
+    <Message>Conversion replaced an "Variant to Flattened String" node with an "Variant to Flattened Byte Array" node. The "Variant to Flattened String" node is not supported in LabVIEW NXG.</Message>
+    <File>G#Object_GetClassVersion.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>StringToByteArrayChanged</ID>
+    <Message>The behavior of "String To Byte Array" has changed. Conversion wired an "Extended ASCII Encoding" enum constant to try to preserve the same behavior. See the help manual for more information.</Message>
+    <File>G#Object_GetClassVersion.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ClusterElementNameMustMatchDataType</ID>
+    <Message>Conversion changed the name of cluster element "" to "Element 1" to match the cluster data type. Cluster element names must match the cluster data type in LabVIEW NXG.</Message>
+    <File>G#Object_GetObjectGraph.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>VIPriorityNotSupported</ID>
+    <Message>Conversion did not preserve the priority of this VI. VI priority conversion is not currently supported. Before conversion the VI priority was set to ‘Time Critical Priority(Highest)’.</Message>
+    <File>G#Object_GetRootClassVersion.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>VIPriorityNotSupported</ID>
+    <Message>Conversion did not preserve the priority of this VI. VI priority conversion is not currently supported. Before conversion the VI priority was set to ‘Time Critical Priority(Highest)’.</Message>
+    <File>G#Object_NewDebugObject.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "user counter (T)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_NewObject.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "no registration (F)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_NewObject.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>VIPriorityNotSupported</ID>
+    <Message>Conversion did not preserve the priority of this VI. VI priority conversion is not currently supported. Before conversion the VI priority was set to ‘Time Critical Priority(Highest)’.</Message>
+    <File>G#Object_NewObject.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "check if valid only (F)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_NewClassAttributes.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>VIPriorityNotSupported</ID>
+    <Message>Conversion did not preserve the priority of this VI. VI priority conversion is not currently supported. Before conversion the VI priority was set to ‘Time Critical Priority(Highest)’.</Message>
+    <File>G#Object_NewClassAttributes.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Multiple Strings" on control "error (F)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_SetError.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>MechanicalActionNotSupported</ID>
+    <Message>The control "error (F)" does not support the mechanical action "Switch When Pressed" and will be converted to use "Switch When Released".</Message>
+    <File>G#Object_SetError.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>VIPriorityNotSupported</ID>
+    <Message>Conversion did not preserve the priority of this VI. VI priority conversion is not currently supported. Before conversion the VI priority was set to ‘Time Critical Priority(Highest)’.</Message>
+    <File>G#Object_SetError.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "user counter (F)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_UserCounterState.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>VIPriorityNotSupported</ID>
+    <Message>Conversion did not preserve the priority of this VI. VI priority conversion is not currently supported. Before conversion the VI priority was set to ‘Time Critical Priority(Highest)’.</Message>
+    <File>G#Object_GenericDefaultConstructor.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>VIPriorityNotSupported</ID>
+    <Message>Conversion did not preserve the priority of this VI. VI priority conversion is not currently supported. Before conversion the VI priority was set to ‘Time Critical Priority(Highest)’.</Message>
+    <File>G#Object_GenericOpen.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Show Vertical Scroll Bar" on control "class path". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_GetClassPath.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Show Browse Button" on control "class path". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_GetClassPath.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ClassNonDefaultValueConstantsNotSupported</ID>
+    <Message>Conversion did not preserve the default value of this constant to the default value of LabVIEW Object. Non-default class constant values are not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_GetClassPath.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>SubVINotSupported</ID>
+    <Message>Conversion replaced the subVI "Get LV Class Path" with a placeholder. This subVI is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_GetClassPath.gvi</File>
+    <Category>Placeholder</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Show Vertical Scroll Bar" on control "class path". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_GetClassType.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>StringUsedAsPathMayNeedToBeUpdated</ID>
+    <Message>The string input for node "BuildPath" is used as a path. Conversion may have invalidated the path.</Message>
+    <File>G#Object_GetClassType.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>StringUsedAsPathMayNeedToBeUpdated</ID>
+    <Message>The string input for node "BuildPath" is used as a path. Conversion may have invalidated the path.</Message>
+    <File>G#Object_GetClassType.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>Info</Severity>
+    <ID>AttachedFreeLabelsNotSupported</ID>
+    <Message>Conversion did not preserve the attachment of the free label to the object because attached free labels are not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_GetClassType.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>SubVINotSupported</ID>
+    <Message>Conversion replaced the subVI "Get LV Class Default Value" with a placeholder. This subVI is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_GetClassType.gvi</File>
+    <Category>Placeholder</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>Info</Severity>
+    <ID>AttachedFreeLabelsNotSupported</ID>
+    <Message>Conversion did not preserve the attachment of the free label to the object because attached free labels are not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_GetClassType.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>Info</Severity>
+    <ID>AttachedFreeLabelsNotSupported</ID>
+    <Message>Conversion did not preserve the attachment of the free label to the object because attached free labels are not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_GetClassType.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>Info</Severity>
+    <ID>AttachedFreeLabelsNotSupported</ID>
+    <Message>Conversion did not preserve the attachment of the free label to the object because attached free labels are not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_GetClassType.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "create if needed (T)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_GetEvent.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "force create (F)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_GetEvent.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>VIPriorityNotSupported</ID>
+    <Message>Conversion did not preserve the priority of this VI. VI priority conversion is not currently supported. Before conversion the VI priority was set to ‘Subroutine’.</Message>
+    <File>G#Object_GetEvent.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "send to Desktop Trace Execution? (F)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_SendUserEvent.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>MechanicalActionNotSupported</ID>
+    <Message>The control "send to Desktop Trace Execution? (F)" does not support the mechanical action "Switch When Pressed" and will be converted to use "Switch When Released".</Message>
+    <File>G#Object_SendUserEvent.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "class attributes (F)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_Serialize.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "as xml (F)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_Serialize.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>MechanicalActionNotSupported</ID>
+    <Message>The control "as xml (F)" does not support the mechanical action "Switch When Pressed" and will be converted to use "Switch When Released".</Message>
+    <File>G#Object_Serialize.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "include aggregates (T)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_Serialize.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>MechanicalActionNotSupported</ID>
+    <Message>The control "include aggregates (T)" does not support the mechanical action "Switch When Pressed" and will be converted to use "Switch When Released".</Message>
+    <File>G#Object_Serialize.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>FlattenToStringReplacedByFlattenToByteArray</ID>
+    <Message>Conversion replaced a "Flatten To String" node with a "Flatten To Byte Array" node. The "Flatten To String" node is not supported in LabVIEW NXG.</Message>
+    <File>G#Object_Serialize.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>FlattenToStringReplacedByFlattenToByteArray</ID>
+    <Message>Conversion replaced a "Flatten To String" node with a "Flatten To Byte Array" node. The "Flatten To String" node is not supported in LabVIEW NXG.</Message>
+    <File>G#Object_Serialize.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>FlattenToStringReplacedByFlattenToByteArray</ID>
+    <Message>Conversion replaced a "Flatten To String" node with a "Flatten To Byte Array" node. The "Flatten To String" node is not supported in LabVIEW NXG.</Message>
+    <File>G#Object_Serialize.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>FlattenToStringReplacedByFlattenToByteArray</ID>
+    <Message>Conversion replaced a "Flatten To String" node with a "Flatten To Byte Array" node. The "Flatten To String" node is not supported in LabVIEW NXG.</Message>
+    <File>G#Object_Serialize.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>NodeNotSupported</ID>
+    <Message>Conversion replaced a node of type "FlattenToXml" with a placeholder node. Nodes of this type are not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_Serialize.gvi</File>
+    <Category>Placeholder</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "class attributes (F)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_Deserialize.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "as xml (F)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_Deserialize.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>MechanicalActionNotSupported</ID>
+    <Message>The control "as xml (F)" does not support the mechanical action "Switch When Pressed" and will be converted to use "Switch When Released".</Message>
+    <File>G#Object_Deserialize.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "include aggregates (T)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_Deserialize.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>MechanicalActionNotSupported</ID>
+    <Message>The control "include aggregates (T)" does not support the mechanical action "Switch When Pressed" and will be converted to use "Switch When Released".</Message>
+    <File>G#Object_Deserialize.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>UnflattenFromStringReplacedByUnflattenFromByteArray</ID>
+    <Message>Conversion replaced an "Unflatten From String" node with an "Unflatten From Byte Array" node. The "Unflatten From String" node is not supported in LabVIEW NXG.</Message>
+    <File>G#Object_Deserialize.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>UnflattenFromStringReplacedByUnflattenFromByteArray</ID>
+    <Message>Conversion replaced an "Unflatten From String" node with an "Unflatten From Byte Array" node. The "Unflatten From String" node is not supported in LabVIEW NXG.</Message>
+    <File>G#Object_Deserialize.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>FlattenToStringReplacedByFlattenToByteArray</ID>
+    <Message>Conversion replaced a "Flatten To String" node with a "Flatten To Byte Array" node. The "Flatten To String" node is not supported in LabVIEW NXG.</Message>
+    <File>G#Object_Deserialize.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>FlattenToStringReplacedByFlattenToByteArray</ID>
+    <Message>Conversion replaced a "Flatten To String" node with a "Flatten To Byte Array" node. The "Flatten To String" node is not supported in LabVIEW NXG.</Message>
+    <File>G#Object_Deserialize.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>UnflattenFromStringReplacedByUnflattenFromByteArray</ID>
+    <Message>Conversion replaced an "Unflatten From String" node with an "Unflatten From Byte Array" node. The "Unflatten From String" node is not supported in LabVIEW NXG.</Message>
+    <File>G#Object_Deserialize.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>UnflattenFromStringReplacedByUnflattenFromByteArray</ID>
+    <Message>Conversion replaced an "Unflatten From String" node with an "Unflatten From Byte Array" node. The "Unflatten From String" node is not supported in LabVIEW NXG.</Message>
+    <File>G#Object_Deserialize.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>NodeNotSupported</ID>
+    <Message>Conversion replaced a node of type "UnflattenFromXml" with a placeholder node. Nodes of this type are not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_Deserialize.gvi</File>
+    <Category>Placeholder</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>FlattenToStringReplacedByFlattenToByteArray</ID>
+    <Message>Conversion replaced a "Flatten To String" node with a "Flatten To Byte Array" node. The "Flatten To String" node is not supported in LabVIEW NXG.</Message>
+    <File>GetClassName.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>SubVINotSupported</ID>
+    <Message>Conversion replaced the subVI "Qualified Name Array To Single String" with a placeholder. This subVI is not supported in this version of LabVIEW NXG.</Message>
+    <File>GetClassName.gvi</File>
+    <Category>Placeholder</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>VIPriorityNotSupported</ID>
+    <Message>Conversion did not preserve the priority of this VI. VI priority conversion is not currently supported. Before conversion the VI priority was set to ‘Time Critical Priority(Highest)’.</Message>
+    <File>GetClassName.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "only from same owner as caller? (T)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>GarbageCollector.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>VIPriorityNotSupported</ID>
+    <Message>Conversion did not preserve the priority of this VI. VI priority conversion is not currently supported. Before conversion the VI priority was set to ‘Time Critical Priority(Highest)’.</Message>
+    <File>GarbageCollector.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "simple info (F)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>GetObjectStatus.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>VIPriorityNotSupported</ID>
+    <Message>Conversion did not preserve the priority of this VI. VI priority conversion is not currently supported. Before conversion the VI priority was set to ‘Time Critical Priority(Highest)’.</Message>
+    <File>GetObjectStatus.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "return data? (T)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>GSharpCls_GetAttributes.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "return data? (T)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>GSharpCls_GetClassAttributes.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlNotEquivalentForControlReference</ID>
+    <Message>Conversion changed the type of control "reference in" associated with this control reference node. The VI Server class of this control reference may have changed. The new VI Server class may support a different set of properties and methods, possibly causing broken wires on the diagram.</Message>
+    <File>GSharpCls_Create.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "Counter". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_ObjectInfoType.gtype</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "GenericDestructorExists". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_ObjectInfoType.gtype</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "option 1". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>Kernel.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "option 2". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>Kernel.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "option 3". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>Kernel.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>NodeNotSupported</ID>
+    <Message>Conversion replaced a node of type "RequestDeallocation" with a placeholder node. Nodes of this type are not supported in this version of LabVIEW NXG.</Message>
+    <File>Kernel.gvi</File>
+    <Category>Placeholder</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>Info</Severity>
+    <ID>StackedSequenceReplacedByFlatSequence</ID>
+    <Message>Conversion replaced a Stacked Sequence structure with a Flat Sequence Structure. Stacked Sequence structures are not supported in LabVIEW NXG.</Message>
+    <File>Kernel.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ClassNonDefaultValueConstantsNotSupported</ID>
+    <Message>Conversion did not preserve the default value of this constant to the default value of LabVIEW Object. Non-default class constant values are not supported in this version of LabVIEW NXG.</Message>
+    <File>Kernel.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>PathMayNeedToBeUpdated</ID>
+    <Message>Conversion may have invalidated the path for node "Path Constant".</Message>
+    <File>Kernel.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>SubVINotSupported</ID>
+    <Message>Conversion replaced the subVI "Get LV Class Path" with a placeholder. This subVI is not supported in this version of LabVIEW NXG.</Message>
+    <File>Kernel.gvi</File>
+    <Category>Placeholder</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>VIPriorityNotSupported</ID>
+    <Message>Conversion did not preserve the priority of this VI. VI priority conversion is not currently supported. Before conversion the VI priority was set to ‘Time Critical Priority(Highest)’.</Message>
+    <File>Kernel.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>ClassMemberNotFound</ID>
+    <Message>Conversion could not find class member "".</Message>
+    <File>GSharpCls.gtype</File>
+    <Category>SourceFile,NotConverted</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>ClassMemberNotSupported</ID>
+    <Message>Conversion did not add the class member "ClassAttributes.ctl" to the class. This file type is not supported as a class member in this version of LabVIEW NXG.</Message>
+    <File>GSharpCls.gtype</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>ClassMemberNotSupported</ID>
+    <Message>Conversion did not add the class member "ObjectAttributes.ctl" to the class. This file type is not supported as a class member in this version of LabVIEW NXG.</Message>
+    <File>GSharpCls.gtype</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>ClassMemberNotSupported</ID>
+    <Message>Conversion did not add the class member "ObjectAttributesRef.ctl" to the class. This file type is not supported as a class member in this version of LabVIEW NXG.</Message>
+    <File>GSharpCls.gtype</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>ClassMemberNotSupported</ID>
+    <Message>Conversion did not add the class member "ClassAttributesRef.ctl" to the class. This file type is not supported as a class member in this version of LabVIEW NXG.</Message>
+    <File>GSharpCls.gtype</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>ClassMemberNotSupported</ID>
+    <Message>Conversion did not add the class member "Enum.ctl" to the class. This file type is not supported as a class member in this version of LabVIEW NXG.</Message>
+    <File>GSharpCls.gtype</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>ClassMemberNotFound</ID>
+    <Message>Conversion could not find class member "".</Message>
+    <File>G#Object.gtype</File>
+    <Category>SourceFile,NotConverted</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>ClassMemberNotSupported</ID>
+    <Message>Conversion did not add the class member "G#Object_ObjectInfoType.ctl" to the class. This file type is not supported as a class member in this version of LabVIEW NXG.</Message>
+    <File>G#Object.gtype</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>ClassMemberNotSupported</ID>
+    <Message>Conversion did not add the class member "G#Object_CreateMethod.ctl" to the class. This file type is not supported as a class member in this version of LabVIEW NXG.</Message>
+    <File>G#Object.gtype</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>ClassMemberNotSupported</ID>
+    <Message>Conversion did not add the class member "G#Object_ClassHierarchy.ctl" to the class. This file type is not supported as a class member in this version of LabVIEW NXG.</Message>
+    <File>G#Object.gtype</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>ClassMemberNotSupported</ID>
+    <Message>Conversion did not add the class member "G#Object_ClassInfoType.ctl" to the class. This file type is not supported as a class member in this version of LabVIEW NXG.</Message>
+    <File>G#Object.gtype</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>ClassMemberNotSupported</ID>
+    <Message>Conversion did not add the class member "G#Object_Event.ctl" to the class. This file type is not supported as a class member in this version of LabVIEW NXG.</Message>
+    <File>G#Object.gtype</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>ClassMemberNotSupported</ID>
+    <Message>Conversion did not add the class member "G#Object_EventType.ctl" to the class. This file type is not supported as a class member in this version of LabVIEW NXG.</Message>
+    <File>G#Object.gtype</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>ClassMemberNotSupported</ID>
+    <Message>Conversion did not add the class member "G#Object_State.ctl" to the class. This file type is not supported as a class member in this version of LabVIEW NXG.</Message>
+    <File>G#Object.gtype</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>NodeNotSupported</ID>
+    <Message>Conversion replaced a node of type "OpenVIReference" with a placeholder node. Nodes of this type are not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_RegisterExternalCreateProcessCallers.gvi</File>
+    <Category>Placeholder</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>VIPriorityNotSupported</ID>
+    <Message>Conversion did not preserve the priority of this VI. VI priority conversion is not currently supported. Before conversion the VI priority was set to ‘Time Critical Priority(Highest)’.</Message>
+    <File>G#Object_RegisterExternalCreateProcessCallers.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>InvokeNodeMethodNotSupported</ID>
+    <Message>Conversion could not convert the Invoke Node with method name Default Vals.Reinit All. The node has been replaced with a placeholder node.</Message>
+    <File>G#Object_RunVI.gvi</File>
+    <Category>Placeholder</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>PropertyNodePropertyNotSupported</ID>
+    <Message>Conversion replaced the property "Path" with a placeholder. This property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_RunVI.gvi</File>
+    <Category>Placeholder</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>PropertyNodePropertyNotSupported</ID>
+    <Message>Conversion replaced the property "Name" with a placeholder. This property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_IsExternalCreateProcessRunning.gvi</File>
+    <Category>Placeholder</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>VIPriorityNotSupported</ID>
+    <Message>Conversion did not preserve the priority of this VI. VI priority conversion is not currently supported. Before conversion the VI priority was set to ‘Time Critical Priority(Highest)’.</Message>
+    <File>G#Object_IsExternalCreateProcessRunning.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "respond to create event? (T)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_GenericCreate.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>ControlPropertyNotSupported</ID>
+    <Message>Conversion was unable to preserve property "Text Color" on control "keep constructor VI ref open? (T)". That property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_GenericCreate.gvi</File>
+    <Category>FrontPanel</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>StringUsedAsPathMayNeedToBeUpdated</ID>
+    <Message>The string input for node "BuildPath" is used as a path. Conversion may have invalidated the path.</Message>
+    <File>G#Object_GenericCreate.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>StringUsedAsPathMayNeedToBeUpdated</ID>
+    <Message>The string input for node "BuildPath" is used as a path. Conversion may have invalidated the path.</Message>
+    <File>G#Object_GenericCreate.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>NodeNotSupported</ID>
+    <Message>Conversion replaced a node of type "OpenVIReference" with a placeholder node. Nodes of this type are not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_GenericCreate.gvi</File>
+    <Category>Placeholder</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ManualFix</Severity>
+    <ID>PropertyNodePropertyNotSupported</ID>
+    <Message>Conversion replaced the property "Exec.IsReentrant" with a placeholder. This property is not supported in this version of LabVIEW NXG.</Message>
+    <File>G#Object_GenericCreate.gvi</File>
+    <Category>Placeholder</Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>ReviewRequired</Severity>
+    <ID>VIPriorityNotSupported</ID>
+    <Message>Conversion did not preserve the priority of this VI. VI priority conversion is not currently supported. Before conversion the VI priority was set to ‘Time Critical Priority(Highest)’.</Message>
+    <File>G#Object_GenericCreate.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+  <Message>
+    <Severity>Info</Severity>
+    <ID>StackedSequenceReplacedByFlatSequence</ID>
+    <Message>Conversion replaced a Stacked Sequence structure with a Flat Sequence Structure. Stacked Sequence structures are not supported in LabVIEW NXG.</Message>
+    <File>G#Object_StartExternalCreateProcess.gvi</File>
+    <Category></Category>
+    <Notes></Notes>
+  </Message>
+</ConversionMessages>

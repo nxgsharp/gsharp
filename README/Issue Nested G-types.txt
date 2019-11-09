@@ -1,0 +1,29 @@
+﻿gtype in gtype: Kan inte ha gtype i gtype, alltså ctl i class.
+  - se https://forums.ni.com/t5/NI-Software-Technology-Preview/Nested-G-Types-class-containing-a-type-def/td-p/3726063
+  
+En library (.gcomp) kan ha namespaces och nästlade namespace. Så man kan ha en namespace för en klass.
+ - se \NXG\Conversion\LV2017ToNXGWithOneGSharpSourceDistributionC\TestNXG.lvproject för förslag på lösning.
+
+Val:
+1. Stöd inte typedef i G#-klass
+2. Gör namespace av klass
+
+
+Val 1:
++ Vi följer hur NI tycker man skall göra. skulle kunna leda till att användare forceras till att använda libraries och namespaces. Kanske bra
+- Behöver förklara för användare varför det är så, att en gtype är en klass och hur namespaces skall användas. 
+- Vad skall man göra med typedef som hamnat utanför klasser? Användare tvingas till val som inte är helt självklara.
+- Man kunde kanske detektera om typedef finns i klass och då skapa namespace kring den, men då behöver man förklara varför vissa klasser har namespace runt sig.
+- Hur förklarar vi och leder rätt i konverteringen? Alltså, efter konvertering är min typedef utanför klassen, hur hjälper vi till att göra rätt val
+
+Val 2:
++ Lättare att definiera en klass = namespace.
+- Konstigt, dubbelt och behöver förklaras varför klass=namespace
+- Mer jobb att skapa konverterare. Att bestämma hur det skall funka och analysera kod rätt för konvertering.
+- Om nested gtypes läggs till är denna lösning onödig/redundant och ser konstig ut. Då behöver vi förklara varför det en gång var så. Eller kunna konvertera igen.
+
+Konverteringar. Förslag, idéer och frågeställningar:
+Class -> Namespace. Namnge namespace med klassnamn.
+- Men för att ha namespace måste man ha gcomp(library). Skall man skapa ett ConvertedCode.gcomp?
+- Om man har ett lvlib och vill distribuera det så kan det inte vara en del av en gcomp för då måste man distribuera hela. - Minsta distribuerbara enheten är en gcomp. Kan man distribuera på mindre enheter än gcomp? Nej inte nu i alla fall. Har provat.
+- Alltså, befintliga top-level lvlib måste konverteras till gcomp. men sub-lvlib konverteras till namespace. Och lösa klasser konverteras till att ligga i en gcomp för sån kod som inte redan låg i en lvlib.

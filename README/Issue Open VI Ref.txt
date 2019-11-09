@@ -1,0 +1,24 @@
+Open VI Ref finns inte.
+
+Följande säger att man skall använda "", men den finns inte:
+http://www.ni.com/documentation/en/labview/2.0/migration/open-vi-ref-behavior-changed
+
+
+Följande säger att man skall använda "Open VI Reference", men den finns inte.
+http://www.ni.com/documentation/en/labview/2.0/node-ref/call-by-reference/?prodref=LabVIEW-NXG-2.1
+
+
+Inget exempel finns
+
+Fråga postad på https://forums.ni.com/t5/NI-Software-Technology-Preview/Open-VI-Reference/td-p/3746578
+
+To NI:
+Subject: Open VI
+I am trying to open a VI dynamically but can find no way of doing it. 
+
+In CG, I have used "Open VI Reference", which has changed behaviour according to the conversion tool, which points me to www.ni.com/documentation/en/labview/2.0/migration/open-vi-ref-behavior-changed/. This page says "Wire the Get Component By Name node to Open VI Reference". But none of these nodes exist, at least I cannot find them. Are they supposed to exist? Where are they? When will they be available?
+
+And I can not find any examples how to open a VI by ref. Are there any examples? The concept of opening a reference to a VI/component dynamically needs to have examples.
+
+
+NXG 2.1.0 Beta (5.3.0.40414)

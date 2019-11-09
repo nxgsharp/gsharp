@@ -1,0 +1,159 @@
+Lista på problem
+----------------
+* gtype in gtype: Kan inte ha gtype i gtype, alltså ctl i class.
+- Se separat fil "Issue Nested G-types"
+
+* VI Server, konvertering fixar inte VIServer methore som "Open VI"
+- Se separat fil "Issue Open VI Ref"
+
+* "Flatten to string" finns inte i NXG. Blir ersatt av "Flatten to byte array". Vi behöver lägga till "Byte array to string" NXG eller göra refactoring på kod innan konvertering som använder något annat än "Flatten to string"
+- Refactoring. Inte säkert att man kan göra som vi gör i LV ens. Detta får man nog ta problem för problem.
+
+* Type conflict Event type: Har inte utrett ännu exakt fel, men antaligen missar NXG konverteringen igen.
+- EventRef tolkas inte som referens. Fråga NI.
+
+* Properties saknas i NXG: Kan vi få det på annat vis i NXG eller göra Refactoring innan konvertering som fungerar
+
+* Get LV class Path och Get LV Class Default Value saknas i NXG. Finns det något annat som vi kan använda för "class ref to path" hantering.
+
+* Konvertera NI metoder i G#Object: Har implemeterat dem i G#Object innan konvertering så att koden kommer med.
+
+* Vi behöver få över G#-klasserna i en lvlib innan konverteringen. G# i NXG skall ligga i en gcomp. Detta behöver G#-konverteraren göra för att kunna länka om det projekt man skall konvertera. För stora projekt kan detta bli jobbigt, särsklit med 32-bitars LV. Kan man / bättre att länka om till gcomp i efterhand? Ja, det borde G#-konverteraren kunna hantera.
+
+
+Begrepp som saknas i NXG?
+=========================
+Find All Instances
+Virtual folders
+
+
+Allmän feedback, issues att rapportera till NI
+=========================
+- En gtype kan sakna gvi men den som finns på disk går inte att öppna utan att öppna gvi. moment 22!
+- Replace från quick-drop saknas
+- LV stänger ner utan fråga om man tar krysset på fönstret. Inte i alla lägen va?
+- öppnar man gvi som är del av gtype från disk så får man felmeddelande om att man inte får göra så utan att öppna hela gtype. MEN ÖPPNA HELA GTYPE DÅ!
+- Save as copy saknas.
+- skapar man ny gvi syns den inte i project files. h-klick på gvi-flik och "find in project files" händer inget med.
+- probning och debugging i allmänhet endast basic-funktioner.
+- Main top VI vs references problem in LabVIEW
+
+Designfunderingar
+=========================
+- ska vi skippa "_AddQ" i mappstrukturen i plugins? Bara gå på G#? Eller, eftersom det är open-source kan det bli en annan implementation av G# och då annan mapp. Kanske ska behålla.
+- NI använder begreppet "gtype" som beroende på innehåll kan vara en typ eller gå över till att bli en klass. Vi skall väl ä'ndå behålla begreppet class i G#?
+- Kernel skulle kunna finnas bara i G#Object som är en vim, och en VI med attribut-typ ersätter Kernel i alla andra klasser.
+- Kernel är helt onödig om man inte vill kunna registrera objekt. Nu finns det en möjlighet att inte göra det per objekt, men default borde inte klass ens ha med funktionen och då behövs inte ens koden. Via refactor-funktion kunde man sen lägga till sån funktion när man behöver.
+   - DVR castas till ref. Den kan man lagra i en lista om man vill använda för debugging. Då behövs ingen kö alls.
+   - Vi behöver alltså bara en enda lista med refs. Man skulle kunna lagra den i en variant-attribute eller sorterad lista. Då är det skitsnabbt att söka i den. Man skulle kunna lägga till info med fully qualified name med så man kan söka på det.
+- ClassAttributes skall default inte finnas, utan kunna läggas till som option från CreateMethod, och via refactor-funktion senare.
+- Det finns nu två köer, en för alla klasser och en för alla objekt (ech en för klassattribut?)
+- En del duplicering av kod finns i G#. gå igenom allt.
+- Det går att effektivisera en del VI genom att sätta inline på dem, deaktivera debugging mm. deaktivera debugging kan man göra i ett distributionsförfarande.
+- Vi behöver kunna stödja konvertering av befintliga projekt, men samtidigt behöver vi i G# för NXG som default skapa så slimmade klasser som möjligt, och istället skall man kunna lägga till funktionalitet såsom registrering för att kunna debugga, eller att man lägger till det i efterhand genom refactor-funktioner.
+- Se över vilka reentrancy-inställningar det skall vara på alla VI. Kan effektiviseras
+- G# hanterar inte i dagsläget lvlib. de filer i en klass som är namngivna <klassnamn>_<metodnamn>.vi måste nu bli <fully wualified name>_<metodnamn>.gci
+- En konverteringsfunktion behövs för att t.ex ersätta kod i Kernel på klasser man konverterar. I detta läget passar det ju bra att man får välja vilka features per klass man vill ha, såsom klassattribut, registrering mm. Så G# behöver göras refactoring på innan vi börjar konvertera till NXG.
+
+
+Fråga Mattias:
+=========================
+G#Object_ExternalCreateProcess.vi -> OpenVIReference. varför öppnas referens som man inte använder? Är det ett trick? tar bort det så länge
+Password till fil saknas i pwg.txt: Verification\TestCases\TestClasses\TcOldClass.llb\TcOldClass_objectRepository.vi
+
+G# Object
+=========================
+Ändrad kod i NXG projekt:
+OBS, lägg in #ToDo-kommentar på alla ställen i koden vi ändrar
+-------------------------
+Qualified Name Array To Single String.vi -> Har implementerat denna i G#Objekt innan konvertering. Behöver implementeras i G#.
+G#Objcet_Clear.vi -> Byt unbundle till bundle by name innan konvertering, pekade på fel element (1) i cluster
+   Intressant: När vi gör unbundle by name med två eller fler så blir det fel i konvertering (byter till två unbundle),
+   men unbundle index blir kvar på 1.. 
+Kernel.vi -> Ändrad innan konvertering. Tagit bort "Error Code Database"(delete>true<1556) och "RequestDeallocation" (Clear). Har tagit bort GetLVClassPath
+G#Object_SendEvent.vi -> Har tagit bort "GenerateUserMinusDefinedTraceEvent" i kod innan kovertering.
+G#Object_GetCommonQueueName -> Se kommentar ovan om "Qualified Name Array To Single String".
+  -> Byt till "Flatten To Byte Array" med byte array to string fortfarande ett problem i denna VI.
+  -> gör exakt samma sak som GetClassName för "full class name". Byt ut eller gör gemensam sub-VI 
+Gtype(class) reference: Fungerar inte mellan Create och New då Create har dynamic dispatch men New inte.
+  -> Löst: Enkelt fel då dynamic dispatch inte var ansluten till nästa VI i diagram för .._New (subVI: GetClassName.vi).
+  -> Ändra detta innan konvertering!!!
+G#Object.lvclass:GetClassName.vi: Byt till "Flatten To Byte Array" med byte array to string
+  -> ändrad innan konvertering. Se LV2017ToNXGWithOneGSharp\Test_GetClassName.vi. Testad att den gör rätt, men resultatet blir inte samma, för "lvlib hierarchy" utgången innehåller två nivåer till i NXG. Behövs diskussion. Är det rätt eller fel och vad påverkar det.
+  -> ???
+G#Object_ParseAttributes -> mycket "byte array" to "string" konverteringar
+  -> Bytt till "Flatten To Byte Array" före konvertering
+G#Object_IsExternalCreateProcessRunning.vi -> property "Name" existerar inte
+  -> tagit bort name property efter konvertering
+G#Object_ExternalCreateProcess.vi -> OpenVIReference, Event Type problem
+  -> OpenVIReference. varför öppnas referens som man inte använder? Är det ett trick? tar bort det så länge
+  -> Event-referenserna funkar inte att konvertera, men lägger man till dem igen blir det inte bruten pil. Men på sub-VI funkar det inte ändå. Så tills vidare tar jag bort Event-ref här. 
+  -> Delegate-funktioner ligger det fem stycken på diagrammet. Detta kunde vara en paralell-loop med P=5. Sätt om VI till preallocated clone
+G#Object_ExternalCreateProcessDelegate.vi -> type conflict event type.
+  ->  tar bort eventdata tills vidare, ändrat före konvertering.
+G#Object_RegisterObject.vi: variant to Byte array
+  -> fixat i NXG
+G#Object_RegisterExternalCreateProcessCallers.gvi: Open VIRef
+  -> tar bort placeholder och sätter error och #ToDo
+G#Object_GetClassPath -> "Get LV Class Path" existerar inte.
+  -> tar bort placeholder och sätter error och #ToDo
+G#Object_GenericCreate -> property "Exec.IsReentrant" existerar inte. Ändra innan konvertering, "OpenVIReference".
+  -> tagit bort OpenVIRef och exec.isReentrant. sätter error och ToDo. Ta även bort den extrakod som letar upp klass. Det skall inte vara en del av G#. det är plattformskod.
+G#Object.lvclass:G#Object_IsCallToParent.vi
+  -> kod letar efter .lvclass. Ändrar till gtype. Behöver testas.
+G#Object.lvclass:ToString.vi  
+  ->  I C# får man ut namn på objekttyp. Borde ändras till att göra det. Nu är det "not implemented". Förbättra även dokumentation hur man skall göra med den, ta guidelines från msdn.  
+G#Object_GetEvent.vi -> "Event type" konflikt. "Not a Number/Path/refnum" kan inte ta in eventref.  
+  -> ändrar före konvertering så man inte kollar nan utan kollar en separat flagga om event finns. First Call? borde funka med. Om force create så skall man göra destroy och kasta error, istf att kolla om ref=NaN. Valid kan istf att kolla NaN kolla om den är skapad eller finns.
+G#Library.lvlib:G#Object.lvlib:G#Object.lvclass:G#Object_Clear.vi
+ -> Det söks på .lvlib. Detta måste göras om så det pekar på rätt namespace.
+G#.lvlib:G#Object.lvlib:G#Object.lvclass:GetClassName.vi var inte reentrant på G#Object men i G#Interface. Ändra i G# till reentrant shared.
+  
+Problem som inte är ändrade (innan konvertering)
+------------------------------------------------
+G#Object_Create.vi -> reference, dynamic dispatch ?
+G#Object_ConvertFlattenedDataToMoreGeneric.Vi -> byt "Variant to flattened string" till
+ "Variant flattened Byte array" gå förbi konvertering till string på två ställen.
+G#Object_Create.vi -> reference problem
+G#Object_RegisterExternalCreateProcessCallers.vi -> Ändra innan konvertering, "OpenVIReference".
+  -> ta bort external create från G# tills det kan stödjas.
+G#Object_RunVI.vi -> property "Invoke Node: Default Vals.Reinit All", property "VI path" existerar inte.
+  -> Ta bort Default Vals.Reinit All tills vidare
+  -> Att man tar VI path är för att få reda på class path. Det förutsätts att VI ligger direkt i ClassPath-katalog. Ingen bra lösning. Vi ska ha tag i klassens namn och fully-qualified name, det måste gå att göra bättre.
+  -> gör refactoring så återkommande kod "skicka error-event" blir en VI.
+G#Object_Serialize -> Mycket "Byte Array" to "string" konverteringsfel.
+  -> vänta med denna funktion. Ta bort den från G# tills vidare
+G#Object_Deserialize -> "unflatten from xml" existerar inte, mycket "Byte Array" to "string" konverteringsfel.
+  -> vänta med denna funktion. Ta bort den från G# tills vidare
+G#Object_Serialize -> "FlattenToXML", mycket "Byte Array" to "string" konverteringsfel.
+G#Object_GetClassType -> "Get LV Class Default Value" existerar inte, "BuildPath" kanske invalid path?
+  -> Dynamisk laddning av klass finns inte i NXG ännu, därav finns inte denna funktion.
+  -> Ta samtidigt bort från G# att tillåta att söka på path. Det skall inte ligga i G# utan är plattformskod. Här skall man redan ha sökväg till klass.
+G#Object_GetClassVersion -> "String" to "byte array" konvertering (Variant to flattened byte array)
+G#Object_ConvertToMoreGeneric -> Lägg till "byte array to string"
+
+G#Object_ObjectInfoType.ctl -> This file type is not supported as a class member in this version of LabVIEW NXG.
+G#Object_CreateMethod.ctl -> This file type is not supported as a class member in this version of LabVIEW NXG.
+G#Object_ClassHierarchy.ctl -> This file type is not supported as a class member in this version of LabVIEW NXG.
+G#Object_ClassInfoType.ctl -> This file type is not supported as a class member in this version of LabVIEW NXG.
+G#Object_Event.ctl -> This file type is not supported as a class member in this version of LabVIEW NXG.
+G#Object_EventType.ctl -> This file type is not supported as a class member in this version of LabVIEW NXG.
+G#Object_State.ctl -> This file type is not supported as a class member in this version of LabVIEW NXG.
+
+
+G# class
+========
+Dessa problem borde en konverterare fixa. Om vi rapporterar till NI så kanske de fixar några av dem
+som gör att en konverterare från våran sida fungerar bättre.
+
+Kernel.vi -> Ändra innan konvertering "RequestDeallocation" (Clear), 
+             "Get LV Class Path" existerar inte (class hierarchy), 
+
+ClassAttributes.ctl -> This file type is not supported as a class member in this version of LabVIEW NXG.
+ObjectAttributes.ctl -> This file type is not supported as a class member in this version of LabVIEW NXG.
+ObjectAttributesRef.ctl -> This file type is not supported as a class member in this version of LabVIEW NXG.
+ClassAttributesRef.ctl -> This file type is not supported as a class member in this version of LabVIEW NXG.
+Enum.ctl(user) -> This file type is not supported as a class member in this version of LabVIEW NXG.
+Reference, dynamic dispatch eller inte mellan VIs
+.ctl (gtype) ngår inte i ännu classer (gtype)
+Get LV class Path och Get LV Class Default Value saknas i NXG
