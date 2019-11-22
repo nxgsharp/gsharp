@@ -25,3 +25,6 @@ A few helper VIs have been created in  the private folder to minimise conversion
 #5 gtype in gtype is not supported. So ctls cannot be in a class. See separate readme file "Issue Nested G-types".
 
 #6 Type conflict for event type. Event referenec is not seen as a reference. (Unknown status for this in NXG4)
+
+More detailed information in the README folder
+
