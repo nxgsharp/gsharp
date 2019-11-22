@@ -22,4 +22,6 @@ A few helper VIs have been created in  the private folder to minimise conversion
 
 #4 G#Object is not in a lvlib. Conversion will put the code in "Loose files". The NXG G#Object has to be in a namespace (library). The conversion must redirect the code to link to the library.
 
-#5 Bugger, where the hell did my commit go! All that work :(
+#5 gtype in gtype is not supported. So ctls cannot be in a class. See separate readme file "Issue Nested G-types".
+
+#6 Type conflict for event type. Event referenec is not seen as a reference. (Unknown status for this in NXG4)
