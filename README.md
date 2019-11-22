@@ -2,11 +2,9 @@
 G#
 
 
-# Under construction #
+# Content: #
 
-
-## Content: ##
-### Folder "Simple project to convert" ###
+## Folder "Simple project to convert" ##
 Contains a simple G# project and G#Object prepared for conversion to NXG.
 Search for bookmark #ToDo to see where code has been altered to be prepared for conversion to G# as much as possible. 
 A VI has been creatred as placeholder for missing NXG functions "G#Object_NXGNotImplemented".
